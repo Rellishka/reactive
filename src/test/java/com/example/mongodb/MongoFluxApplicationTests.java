@@ -39,7 +39,7 @@ public class MongoFluxApplicationTests {
 				.bindToRouterFunction(routerConfiguration.routerFunction())
 				.build();
 
-		Employee expected = new Employee(1L, "A post test");
+		Employee expected = new Employee(1L, "Some test name");
 
 		//when(employeeService.findById(1L)).thenReturn(Mono.just(expected));
 		client.get()
